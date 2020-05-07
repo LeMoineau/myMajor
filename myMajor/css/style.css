@@ -1,0 +1,328 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body {
+
+  margin: 0;
+  padding: 0;
+  background-color: #2d3436;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+
+#header {
+
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 0;
+  background-color: rgb(14, 59, 90);
+  text-align: center;
+
+}
+
+#header h1 {
+
+  margin-top: 0;
+  font-size: 24px;
+  color: white;
+
+}
+
+#buttonPanel {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0px;
+}
+
+.header-button {
+
+  margin: 10px;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.2s linear;
+  border-bottom: solid 2px transparent;
+  width: 150px;
+  margin-bottom: 1px;
+
+}
+.header-button a{
+    text-decoration: none;
+    color: white;
+}
+
+.header-button:hover {
+
+  border-bottom: solid 2px #6a89cc;
+
+}
+
+#container {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 10px;
+
+}
+
+#majeur-menu {
+
+  position: fixed;
+  display: none;
+  transition: all 0.2s linear;
+
+}
+
+.layout {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  z-index: 10;
+
+}
+
+#majeur-nav {
+
+  position: fixed;
+  left: 0;
+  width: 100%;
+  z-index: 11;
+  background-color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0px 2px 12px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+#majeur-nav p {
+
+  margin: 0;
+  padding: 10px;
+  border-right: solid 1px black;
+  border-left: solid 1px black;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 0.2s linear;
+  font-size: 12px;
+
+}
+
+#majeur-nav p:hover {
+
+  background-color: #f1f2f6;
+
+}
+
+#majeur-nav a{
+
+    text-decoration: none;
+    color: black;
+
+}
+
+.intro{
+
+  text-align: center;
+
+}
+
+.intro h2{
+
+  font-size: 80px;
+  padding-top: 20px;
+  color: white;
+
+}
+
+#citation{
+
+  font-size: 17px;
+  color: #dff9fb;
+
+}
+
+.Petite-intro{
+
+  color: white;
+  font-size: 20px;
+  margin: 70px;
+
+}
+
+#container{
+
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #1e272e;
+  width: 900px;
+  height: 450px;
+  align-items: center;
+  font-size: 30px;
+
+}
+
+#title-container{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+
+}
+
+.mini-titre{
+
+  font-size: 20px;
+
+
+}
+
+.graphe-container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 700px;
+    padding-top: 50px;
+}
+
+.graphe{
+
+  width: 650px;
+  margin: 20px;
+
+
+}
+
+.graphe span{
+
+  position: absolute;
+  margin-top: 23px;
+  margin-left: -35px;
+  color: #09c;
+  background: rgba(0,0,0,.9);
+  padding: 15px;
+  border-radius: 3px;
+  box-shadow: 0 0 2px rgba(0,0,0,.5);
+  transform: scale(0) rotate(-12deg);
+  transition: all .25s;
+  opacity: 1;
+
+}
+
+.graphe:hover span, .graphe:focus span{
+     transform:scale(1) rotate(0);
+}
+
+.visu{
+
+  height: 8px;
+  background-color: #6c5ce7;
+  transition: all 1s linear;
+
+}
+
+#Ographe .visu{
+
+  animation: loading-bar1 1s linear;
+  width: 200px
+
+}
+
+#Ographe .WhenClickOnMaster {
+  width: 150px;
+}
+
+#Ngraphe .visu{
+
+  animation: loading-bar2 1s linear;
+  width: 600px
+
+}
+
+.hover-title{
+
+  transition: all 0.2s linear;
+  decoration: none;
+
+}
+
+.hover-title:hover{
+
+  color: #636e72;
+  text-decoration: none;
+
+}
+
+@keyframes loading-bar1 {
+
+  0%{width:0px}
+  100%{width: 200px}
+
+}
+
+@keyframes loading-bar2 {
+
+  0%{width:0px}
+  100%{width: 600px}
+
+}
+
+.psuite{
+
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin: 70px;
+}
+
+#Ographe2 .visu{
+
+  animation: loading-bar3 1s linear;
+  width: 600px
+
+}
+
+#Ngraphe2 .visu{
+
+  animation: loading-bar4 1s linear;
+  width: 300px
+
+}
+
+@keyframes loading-bar3 {
+
+    0%{width:0px}
+    100%{width: 600px}
+
+  }
+
+  @keyframes loading-bar4 {
+
+    0%{width:0px}
+    100%{width: 300px}
+
+  }
