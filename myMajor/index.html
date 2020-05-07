@@ -2,126 +2,85 @@
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>My Major</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script type="text/javascript" src="http://code.highcharts.com/highcharts.js"></script>
+    <title>myMajor</title>
+    <link rel="stylesheet" href="css/graphe.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="icon" type="image/png" href="resources/logo_circle.png" />
   </head>
   <body>
-    <div id="header">
-      <h1>My Major</h1>
-      <div id="buttonPanel">
-        <div class="header-button" onclick="showMajeurMenu()">
-          Majeurs
-        </div>
-        <div class="header-button">
-          <a href="pages/quizz/majors.html">Quizz</a>
-        </div>
-        <div class="header-button">
-          L'apprentissage
-        </div>
-      </div>
 
-      <div id="majeur-menu">
-        <div class="layout" onclick="closeMajeurMenu()"></div>
-        <div id="majeur-nav">
-          <p><a href="pages/maj/bigdata.html">Big Data and Machin Learning</a></p>
-          <p><a href="pages/maj/BuisInt.html">Business Intelligence and Analytics</a></p>
-          <p><a href="pages/maj/digitrans.html">Digital Transfert & cloud services</a></p>
-          <p><a href="pages/maj/Netcloud.html">Networks & cloud Infrastructure</a></p>
-          <p><a href="pages/maj/ImageVR.html">Imagerie & réalité virtuelle</a></p>
-          <p><a href="pages/maj/BioInfo.html">Bio-informatique</a></p>
-          <p><a href="pages/maj/AvionEs.html">Avionique et Espace</a></p>
-          <p><a href="pages/maj/SoftEng.html">Software Engineering</a></p>
-          <p><a href="pages/maj/CybSecu.html">Cybersécurité</a></p>
-          <p><a href="pages/maj/ITFin.html">Information Technology for Finance</a></p>
-          <p><a href="pages/maj/RoboDrone.html">Systèmes robotiques et drones</a></p>
-          <p><a href="pages/maj/EnerNew.html">Energies nouvelles et smart Grids</a></p>
+    <header>
+      <div id="logo">
+        <img src="resources/logo_circle.png">
+        <h3> myMajor </h3>
+      </div>
+      <div id="header-buttons">
+        <div class="header-section">
+          <div class="header-button"> Majeurs </div>
+          <nav id="maj-nav">
+            <ul>
+              <li>Big Data and Machin Learning</li>
+              <li>Business Intelligence and Analytics</li>
+              <li>Digital Transfert & cloud services</li>
+              <li>Networks & cloud Infrastructure</li>
+              <li>Imagerie & réalité virtuelle</li>
+              <li>Bio-informatique</li>
+              <li>Avionique et Espace</li>
+              <li>Software Engineering</li>
+              <li>Cybersécurité</li>
+              <li>Information Technology for Finance</li>
+              <li>Systèmes robotiques et drones</li>
+              <li>Energies nouvelles et smart Grids</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-section">
+          <div class="header-button"> Quizz </div>
+          <nav id="quizz-nav">
+            <ul>
+              <li>Testonsqzdqzdqzd</li>
+              <li>des</li>
+              <li>choses</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-section">
+          <div class="header-button"> L'apprentissage </div>
+          <nav id="appr-nav">
+            <ul>
+              <li>Testonsqzdqzdqzd</li>
+              <li>des</li>
+              <li>choses</li>
+            </ul>
+          </nav>
         </div>
       </div>
-    </div>
-    <div class="intro">
-      <h2> BIENVENUE SUR MY MAJOR</h2>
-      <p id="citation">
-        “Garde en mémoire que l'avenir te sera plus doux si tu emploies bien le temps présent"
-      </p>
-      <p>
-        My major est un outils d'aide à la spécialisation des éleves, afin qu'ils ne commèttent pas l'erreur qu'ils leurs coutraient leur futur   
-      </p>
-      <p class="Petite-intro">
-        Après une étude réaliser sur une centaine d'étudiant de l'EFREI nous avons remarquer que les étudiants n'avait pas
-        toute les inforamtions, pour pouvoir choisir la majeurs qui les correspondent le plus.
-        <br>
-        <br>
-        Comme vous pouvez le voir sur le graphique suivant
-      </p>
+    </header>
 
-    </div>
-    <div Id="container">
-    <h3 class="mini-titre">
-      Pourcentage d'éleves qui ont reçus assez d'information concernant les majeurs
-    </h3>
-      <div id="title-container">
-        <div class="hover-title">
-           Licence
-        </div>
-        <div> / </div>
-        <div class="hover-title" onclick="Master()">
-          Master
-        </div>
-      </div>
+    <main>
+      <h1>Saviez-vous que prêt de 1/4 des étudiants EFREI n'ont pas été renseigné sur les majeurs ?</h1>
       <div class="graphe-container">
-        <div id="Ographe" class="graphe">
-            OUI <span class="value"> 25% </span>
-          <div class="visu"> </div>
+        <h2 class="graphe-title"> Avez-vous reçu assez d'informations sur les majeurs ? </h2>
+        <div class="graphe">
+          <div class="desc"> OUI </div>
+          <div class="visu oui" style="width: 125px;"> <div class="pourcent"> 25% </div> </div>
         </div>
-        <div id="Ngraphe" class="graphe">
-            NON <span> 75% </span>
-          <div class="visu"> </div>
+        <div class="graphe">
+          <div class="desc"> NON </div>
+          <div class="visu non" style="width: 375px;"> <div class="pourcent"> 75% </div> </div>
         </div>
-      </div>
-    </div>
-    <p class="psuite">Et tous cela sachant que la plus part des éleves hésitent entre plusieurs Majeurs, tandis que qu'une partie des master n'aiment pas ce qu'ils font
-        <br>comme vous pouvez le pouvoir
-    </p>
-    <div Id="container">
-    <h3 class="mini-titre">
-      Pourcentage d'éleves qui hésitent entre plusieurs majeur / qui n'aiment pas ce qu'ils font
-    </h3>
-      <div id="title-container">
-        <div class="hover-title">
-           Licence
-        </div>
-        <div> / </div>
-        <div class="hover-title" onclick="Master()">
-          Master
+        <div class="graphe-choice">
+          <div class="graphe-choice-button selected" onclick="grapheDisplay(this, 25, 75)"> Licences </div>
+          <div class="graphe-choice-button" onclick="grapheDisplay(this, 60, 40)"> Masters </div>
         </div>
       </div>
-      <div class="graphe-container">
-        <div id="Ographe2" class="graphe">
-            OUI <span> 70% </span>
-          <div class="visu"> </div>
-        </div>
-        <div id="Ngraphe2" class="graphe">
-            NON <span> 30% </span>
-          <div class="visu"> </div>
-        </div>
-      </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <p>.</p>
+    </main>
 
+    <textarea name="name" rows="8" cols="80">coucou les amis</textarea>
 
   </body>
 
-  <script type="text/javascript" src="java.js"></script>
+  <script type="text/javascript" src="javas/java.js"> </script>
+
 </html>

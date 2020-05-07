@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Roboto:wght@300&display=swap');
+
+h1 {
+  margin-top: 50px;
+  font-size: 30px;
+  font-family: "Patua One", cursive;
+  font-weight: normal;
+  text-align: center;
+}
+
+h2 { font-size: 20px; font-weight: normal; }
+
+main {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.graphe-container {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  background-color: #C9D2D8;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  padding-bottom: 40px;
+  padding-top: 40px;
+
+}
+
+.graphe {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 500px;
+  margin: 10px;
+  padding: 20px;
+
+}
+
+.desc {
+
+  font-size: 20px;
+  font-family: "Patua One", cursive;
+
+}
+
+.visu {
+
+  transition: width 1s linear, height 0.2s linear;
+  height: 5px;
+  border-radius: 5px;
+  background-color: rgba(255, 82, 82,1.0);
+  width: 150px;
+  animation: entre 1s linear;
+  text-align: center;
+  overflow: hidden;
+
+}
+
+.graphe:hover .visu {
+
+  height: 20px;
+
+}
+
+.oui { background-color: #1abc9c; }
+.non { background-color: rgba(255, 82, 82,1.0); }
+
+.pourcent {
+
+  color: white;
+  transition: all 0.2s linear;
+  transform: scale(0) rotate(-12deg);
+
+}
+
+.graphe:hover .pourcent {
+
+  transform: scale(1) rotate(0);
+
+}
+
+.graphe-choice {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+
+}
+
+.graphe-choice-button {
+
+  padding: 7px;
+  border-radius: 50px;
+  background-color: #ADB3C0;
+  margin: 10px;
+  font-size: 15px;
+  border: solid 5px #ADB3C0;
+  transition: all 0.5s linear;
+  cursor: pointer;
+
+}
+
+.selected { background-color: #34495e; color: #ADB3C0; font-weight: bolder; }
