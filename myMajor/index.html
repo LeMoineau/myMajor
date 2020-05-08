@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/graphe.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="icon" type="image/png" href="resources/logo_circle.png" />
   </head>
   <body>
@@ -58,9 +60,11 @@
       </div>
     </header>
 
+
+
     <main>
-      <h1>Saviez-vous que prêt de 1/4 des étudiants EFREI n'ont pas été renseigné sur les majeurs ?</h1>
-      <div class="graphe-container">
+      <div class="graphe-container" id="firstElement">
+        <h1>Saviez-vous que prêt de 1/4 des étudiants EFREI n'ont pas été renseigné sur les majeurs ?</h1>
         <h2 class="graphe-title"> Avez-vous reçu assez d'informations sur les majeurs ? </h2>
         <div class="graphe">
           <div class="desc"> OUI </div>
@@ -75,12 +79,51 @@
           <div class="graphe-choice-button" onclick="grapheDisplay(this, 60, 40)"> Masters </div>
         </div>
       </div>
+
+      <div id="info-container">
+        <div class="behind"> </div>
+        <div id="background">
+          <svg>
+            <polygon points="0,0 900,0 700,800 0,800" id="form1" class="form"/>
+          </svg>
+        </div>
+        <div class="real-info">
+          <h1>Bienvenue sur MyMajor !</h1>
+          <p>myMajor est un outil d'aide à la spécialisation. Vous pourrez vous y renseigner sur les différentes majeurs présentes à l'EFREI à travers
+          des Quizz, des sondages et même des interviews d'intervenants EFREI !</p>
+          <button>Essayer maintenant !</button>
+        </div>
+      </div>
+
+      <div id="sondages">
+        <h1>Nos Sondages</h1>
+      </div>
+
+      <div id="selector">
+        <a href="#firstElement" class="selector-button">
+          <div class="selector-title"> introduction </div>
+          <div class="visu"> </div>
+        </a>
+        <a href="#info-container" class="selector-button">
+          <div class="selector-title"> myEfrei </div>
+          <div class="visu"> </div>
+        </a>
+        <a href="#sondages" class="selector-button">
+          <div class="selector-title"> nos Sondages </div>
+          <div class="visu"> </div>
+        </a>
+      </div>
+
     </main>
 
-    <textarea name="name" rows="8" cols="80">coucou les amis</textarea>
+    <footer>
+      <div> © myMajor </div>
+      <div style="font-family: 'Patua One'"> Powered by bigstones </div>
+    </footer>
 
   </body>
 
   <script type="text/javascript" src="javas/java.js"> </script>
+  <script type="text/javascript"> initFormes() </script>
 
 </html>

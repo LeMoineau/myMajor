@@ -1,25 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Roboto:wght@300&display=swap');
 
-h1 {
-  margin-top: 50px;
-  font-size: 30px;
-  font-family: "Patua One", cursive;
-  font-weight: normal;
-  text-align: center;
-}
-
-h2 { font-size: 20px; font-weight: normal; }
-
-main {
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-}
-
 .graphe-container {
 
   display: flex;
@@ -27,10 +8,9 @@ main {
   justify-content: center;
   align-items: center;
   width: 700px;
-  background-color: #C9D2D8;
+  background-color: transparent;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
   padding-bottom: 40px;
   padding-top: 40px;
 
@@ -55,7 +35,7 @@ main {
 
 }
 
-.visu {
+.graphe .visu {
 
   transition: width 1s linear, height 0.2s linear;
   height: 5px;
@@ -95,9 +75,10 @@ main {
 
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin-top: 10px;
+  width: 500px;
 
 }
 
@@ -105,13 +86,13 @@ main {
 
   padding: 7px;
   border-radius: 50px;
-  background-color: #ADB3C0;
+  background-color: #ecf0f1;
   margin: 10px;
   font-size: 15px;
-  border: solid 5px #ADB3C0;
+  border: solid 2px #ecf0f1;
   transition: all 0.5s linear;
   cursor: pointer;
 
 }
 
-.selected { background-color: #34495e; color: #ADB3C0; font-weight: bolder; }
+.selected { background-color: transparent; color: #ecf0f1; font-weight: bolder; }

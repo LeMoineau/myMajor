@@ -1,328 +1,198 @@
 
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+html{ scroll-behavior:smooth }
 
 body {
 
-  margin: 0;
-  padding: 0;
-  background-color: #2d3436;
-  font-family: 'Raleway', sans-serif;
+  background-color: #ecf0f1;
 
 }
 
-
-#header {
-
-  position: sticky;
-  top: 0;
-  left: 0;
-  width: 100%;
-  margin-top: 0;
-  background-color: rgb(14, 59, 90);
-  text-align: center;
-
-}
-
-#header h1 {
-
-  margin-top: 0;
-  font-size: 24px;
-  color: white;
-
-}
-
-#buttonPanel {
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 0px;
-}
-
-.header-button {
-
-  margin: 10px;
-  padding: 5px;
-  color: white;
-  cursor: pointer;
-  font-size: 20px;
-  transition: all 0.2s linear;
-  border-bottom: solid 2px transparent;
-  width: 150px;
-  margin-bottom: 1px;
-
-}
-.header-button a{
-    text-decoration: none;
-    color: white;
-}
-
-.header-button:hover {
-
-  border-bottom: solid 2px #6a89cc;
-
-}
-
-#container {
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding-top: 10px;
-
-}
-
-#majeur-menu {
-
-  position: fixed;
-  display: none;
-  transition: all 0.2s linear;
-
-}
-
-.layout {
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: transparent;
-  z-index: 10;
-
-}
-
-#majeur-nav {
-
-  position: fixed;
-  left: 0;
-  width: 100%;
-  z-index: 11;
-  background-color: #ffffff;
-  cursor: pointer;
-  box-shadow: 0px 2px 12px 0 rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-
-}
-
-#majeur-nav p {
-
-  margin: 0;
-  padding: 10px;
-  border-right: solid 1px black;
-  border-left: solid 1px black;
-  height: 30px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  transition: all 0.2s linear;
-  font-size: 12px;
-
-}
-
-#majeur-nav p:hover {
-
-  background-color: #f1f2f6;
-
-}
-
-#majeur-nav a{
-
-    text-decoration: none;
-    color: black;
-
-}
-
-.intro{
-
-  text-align: center;
-
-}
-
-.intro h2{
-
-  font-size: 80px;
-  padding-top: 20px;
-  color: white;
-
-}
-
-#citation{
-
-  font-size: 17px;
-  color: #dff9fb;
-
-}
-
-.Petite-intro{
-
-  color: white;
-  font-size: 20px;
-  margin: 70px;
-
-}
-
-#container{
-
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background-color: #1e272e;
-  width: 900px;
-  height: 450px;
-  align-items: center;
+h1 {
+  margin-top: 50px;
   font-size: 30px;
-
+  font-family: "Patua One", cursive;
+  font-weight: normal;
+  text-align: center;
 }
 
-#title-container{
+h2 { font-size: 20px; font-weight: normal; }
+
+main {
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 40px;
 
 }
 
-.mini-titre{
-
-  font-size: 20px;
-
-
-}
-
-.graphe-container{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 700px;
-    padding-top: 50px;
-}
-
-.graphe{
-
-  width: 650px;
-  margin: 20px;
-
-
-}
-
-.graphe span{
+#background {
 
   position: absolute;
-  margin-top: 23px;
-  margin-left: -35px;
-  color: #09c;
-  background: rgba(0,0,0,.9);
-  padding: 15px;
-  border-radius: 3px;
-  box-shadow: 0 0 2px rgba(0,0,0,.5);
-  transform: scale(0) rotate(-12deg);
-  transition: all .25s;
-  opacity: 1;
+  width: 100%;
+  height: 800px;
 
 }
 
-.graphe:hover span, .graphe:focus span{
-     transform:scale(1) rotate(0);
-}
+#background svg {
 
-.visu{
-
-  height: 8px;
-  background-color: #6c5ce7;
-  transition: all 1s linear;
+  width: 100%;
+  height: 100%;
 
 }
 
-#Ographe .visu{
+#form1 {
 
-  animation: loading-bar1 1s linear;
-  width: 200px
-
-}
-
-#Ographe .WhenClickOnMaster {
-  width: 150px;
-}
-
-#Ngraphe .visu{
-
-  animation: loading-bar2 1s linear;
-  width: 600px
+  fill: rgba(64, 64, 122,1.0);
+  stroke-width: 0;
 
 }
 
-.hover-title{
+#firstElement {
+
+  width: calc(100% - 40px);
+  background-color: #badc58;
+  border-radius: 0;
+
+}
+
+.behind {
+
+  position: absolute;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: transparent;
+  background-image: url("../resources/efrei.jpg");
+  background-size: cover;
+
+}
+
+#info-container {
+
+  width: 100%;
+  height: 800px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+
+}
+
+.real-info {
+
+  position: relative;
+  color: rgba(230, 230, 230);
+  padding: 40px;
+  width: 700px;
+  height: calc(100% - 80px);
+
+}
+
+.real-info h1 {
+
+  text-align: left;
+  font-weight: normal;
+
+}
+
+.real-info button {
 
   transition: all 0.2s linear;
-  decoration: none;
+  padding: 20px;
+  border-radius: 50px;
+  width: 250px;
+  font-size: 20px;
+  font-family: 'Patua One', cursive;
+  color: rgba(84, 84, 142,1.0);
+  margin: 40px;
+  margin-left: calc(50% - 125px);
+  border: solid 2px #ecf0f1;
+  background-color: #ecf0f1;
+  cursor: pointer;
 
 }
 
-.hover-title:hover{
+.real-info button:hover {
+  background-color: rgba(84, 84, 142,1.0);
+  color: #ecf0f1;
+}
 
-  color: #636e72;
+.real-info p {
+
+  font-size: 20px;
+
+}
+
+#selector {
+
+  position: fixed;
+  right: 0;
+  height: 300px;
+  top: calc(50% - 100px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+
+}
+
+.selector-button {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
   text-decoration: none;
 
 }
 
-@keyframes loading-bar1 {
+.selector-button:hover .selector-title {
 
-  0%{width:0px}
-  100%{width: 200px}
-
-}
-
-@keyframes loading-bar2 {
-
-  0%{width:0px}
-  100%{width: 600px}
+  transform: scale(1);
 
 }
 
-.psuite{
+.selector-button .selector-title {
 
-  color: white;
-  font-size: 20px;
+  white-space: nowrap;
+  transform: scale(0);
+  transition: transform 0.2s linear;
+  color: #ecf0f1;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.selector-button .visu {
+
+  background-color: transparent;
+  width: 15px;
+  height: 15px;
+  border: solid 3px #ecf0f1;
+  margin: 10px;
+  border-radius: 100%;
+  transition: background-color 0.2s linear;
+
+}
+
+.selector-button:hover .visu {
+  background-color: #ecf0f1;
+}
+
+#sondages {
+
+  width: 100%;
+  height: 800px;
+  background-color: #ffbe76;
+  z-index: -1;
+
+}
+
+#sondages h1 {
+
   text-align: center;
-  margin: 70px;
-}
-
-#Ographe2 .visu{
-
-  animation: loading-bar3 1s linear;
-  width: 600px
+  font-family: 'Patua One', cursive;
+  font-weight: normal;
 
 }
-
-#Ngraphe2 .visu{
-
-  animation: loading-bar4 1s linear;
-  width: 300px
-
-}
-
-@keyframes loading-bar3 {
-
-    0%{width:0px}
-    100%{width: 600px}
-
-  }
-
-  @keyframes loading-bar4 {
-
-    0%{width:0px}
-    100%{width: 300px}
-
-  }

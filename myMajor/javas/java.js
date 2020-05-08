@@ -27,3 +27,20 @@ function grapheDisplay(ele, value_oui, value_non) {
   pourcents[1].innerHTML = value_non + "%";
 
 }
+
+function initFormes() {
+
+  var background = document.querySelector("#background");
+  var forms = document.querySelectorAll(".form");
+
+  toWrite = "";
+
+  for (f of forms) {
+    var pts = f.getAttribute("points");
+    pts = pts.replace("100%", background.clientWidth);
+    pts = pts.replace("100%", background.clientWidth);
+    pts = pts.replace("100%", background.clientWidth);
+    f.setAttribute("points", pts);
+  }
+
+}
