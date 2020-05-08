@@ -60,8 +60,6 @@
       </div>
     </header>
 
-
-
     <main>
       <div class="graphe-container" id="firstElement">
         <h1>Saviez-vous que prêt de 1/4 des étudiants EFREI n'ont pas été renseigné sur les majeurs ?</h1>
@@ -75,8 +73,8 @@
           <div class="visu non" style="width: 375px;"> <div class="pourcent"> 75% </div> </div>
         </div>
         <div class="graphe-choice">
-          <div class="graphe-choice-button selected" onclick="grapheDisplay(this, 25, 75)"> Licences </div>
-          <div class="graphe-choice-button" onclick="grapheDisplay(this, 60, 40)"> Masters </div>
+          <div class="graphe-choice-button selected" onclick="grapheDisplay(this, [25, 75])"> Licences </div>
+          <div class="graphe-choice-button" onclick="grapheDisplay(this, [60, 40])"> Masters </div>
         </div>
       </div>
 
@@ -91,12 +89,32 @@
           <h1>Bienvenue sur MyMajor !</h1>
           <p>myMajor est un outil d'aide à la spécialisation. Vous pourrez vous y renseigner sur les différentes majeurs présentes à l'EFREI à travers
           des Quizz, des sondages et même des interviews d'intervenants EFREI !</p>
-          <button>Essayer maintenant !</button>
+          <button>Essayez maintenant !</button>
         </div>
       </div>
 
       <div id="sondages">
-        <h1>Nos Sondages</h1>
+        <h1>Nos Sondages sur la promo 2023</h1>
+        <div class="graphe-container">
+          <h2 class="graphe-title"> Quelle majeur souhaiteriez-vous intégrer ? </h2>
+          <div class="graphe">
+            <div class="desc"> Cybersécurité </div>
+            <div class="visu" style="width: 141px;"> <div class="pourcent"> 28.1% </div> </div>
+          </div>
+          <div class="graphe">
+            <div class="desc"> Software Engineering </div>
+            <div class="visu" style="width: 70px;"> <div class="pourcent"> 14% </div> </div>
+          </div>
+          <div class="graphe">
+            <div class="desc"> Digital Transformation and Cloud services </div>
+            <div class="visu" style="width: 44px;"> <div class="pourcent"> 8.8% </div> </div>
+          </div>
+          <div class="graphe-choice">
+            <div class="graphe-choice-button selected" onclick="grapheDisplay(this, [28.1, 14, 8.8])"> Licences </div>
+            <div class="graphe-choice-button like-selected"> 57 réponses </div>
+          </div>
+        </div>
+        <button onclick="instantiateNewGraphe(this)">Un autre !</button>
       </div>
 
       <div id="selector">
@@ -124,6 +142,5 @@
   </body>
 
   <script type="text/javascript" src="javas/java.js"> </script>
-  <script type="text/javascript"> initFormes() </script>
 
 </html>

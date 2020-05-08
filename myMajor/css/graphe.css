@@ -40,7 +40,7 @@
   transition: width 1s linear, height 0.2s linear;
   height: 5px;
   border-radius: 5px;
-  background-color: rgba(255, 82, 82,1.0);
+  background-color: #686de0;
   width: 150px;
   animation: entre 1s linear;
   text-align: center;
@@ -54,8 +54,8 @@
 
 }
 
-.oui { background-color: #1abc9c; }
-.non { background-color: rgba(255, 82, 82,1.0); }
+.graphe .oui { background-color: #1abc9c; }
+.graphe .non { background-color: rgba(255, 82, 82,1.0); }
 
 .pourcent {
 
@@ -92,7 +92,9 @@
   border: solid 2px #ecf0f1;
   transition: all 0.5s linear;
   cursor: pointer;
+  transform: scale(1) rotate(0);
+  animation: entreScale 0.4s linear;
 
 }
 
-.selected { background-color: transparent; color: #ecf0f1; font-weight: bolder; }
+.selected, .like-selected { background-color: transparent; color: #ecf0f1; font-weight: bolder; }
