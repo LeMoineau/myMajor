@@ -83,15 +83,19 @@ nav {
 
 }
 
+nav ul { padding-inline-start: 30px; }
+
 li {
   list-style-type: "📙 ";
   margin-bottom: 10px;
-}
-
-li:hover {
-  list-style-type: "📖 ";
   cursor: pointer;
 }
+
+li:hover { list-style-type: "📖 "; }
+header a { text-decoration: none; color: inherit; }
+
+#quizz-nav li { list-style-type: "❓ "; }
+#quizz-nav li:hover { list-style-type: "❔ "; }
 
 #maj-nav { right: 500px; width: 300px; }
 #quizz-nav { right: 250px; }
@@ -110,3 +114,26 @@ li:hover {
 }
 
 .header-section:hover #maj-nav { height: 400px; }
+
+button {
+
+  transition: all 0.2s linear;
+  padding: 20px;
+  border-radius: 50px;
+  width: 250px;
+  font-size: 20px;
+  font-family: 'Patua One', cursive;
+  color: rgba(84, 84, 142,1.0);
+  margin: 40px;
+  margin-left: calc(50% - 125px);
+  border: solid 2px #ecf0f1;
+  background-color: #ecf0f1;
+  cursor: pointer;
+  outline: none;
+
+}
+
+button:hover {
+  background-color: rgba(84, 84, 142,1.0);
+  color: #ecf0f1;
+}

@@ -97,29 +97,6 @@ main {
 
 }
 
-button {
-
-  transition: all 0.2s linear;
-  padding: 20px;
-  border-radius: 50px;
-  width: 250px;
-  font-size: 20px;
-  font-family: 'Patua One', cursive;
-  color: rgba(84, 84, 142,1.0);
-  margin: 40px;
-  margin-left: calc(50% - 125px);
-  border: solid 2px #ecf0f1;
-  background-color: #ecf0f1;
-  cursor: pointer;
-  outline: none;
-
-}
-
-button:hover {
-  background-color: rgba(84, 84, 142,1.0);
-  color: #ecf0f1;
-}
-
 .real-info p {
 
   font-size: 20px;
