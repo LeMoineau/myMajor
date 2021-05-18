@@ -1,8 +1,0 @@
-
-@keyframes entre {
-  0%{ width: 0 }
-}
-
-@keyframes entreScale {
-  0%{ transform: scale(0) rotate(12deg); }
-}
