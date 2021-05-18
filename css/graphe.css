@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Roboto:wght@300&display=swap');
+
+.graphe-container {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 20px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+
+}
+
+.graphe {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 500px;
+  margin: 10px;
+  padding: 20px;
+
+}
+
+.desc {
+
+  font-size: 20px;
+  font-family: "Patua One", cursive;
+
+}
+
+.graphe .visu {
+
+  transition: width 1s linear, height 0.2s linear;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #686de0;
+  width: 150px;
+  animation: entre 1s linear;
+  text-align: center;
+  overflow: hidden;
+
+}
+
+.graphe:hover .visu {
+
+  height: 20px;
+
+}
+
+.graphe .oui { background-color: #1abc9c; }
+.graphe .non { background-color: rgba(255, 82, 82,1.0); }
+
+.pourcent {
+
+  color: white;
+  transition: all 0.2s linear;
+  transform: scale(0) rotate(-12deg);
+
+}
+
+.graphe:hover .pourcent {
+
+  transform: scale(1) rotate(0);
+
+}
+
+.graphe-choice {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+  width: 500px;
+
+}
+
+.graphe-choice-button {
+
+  padding: 7px;
+  border-radius: 50px;
+  background-color: #ecf0f1;
+  margin: 10px;
+  font-size: 15px;
+  border: solid 2px #ecf0f1;
+  transition: all 0.5s linear;
+  cursor: pointer;
+  transform: scale(1) rotate(0);
+  animation: entreScale 0.4s linear;
+
+}
+
+.selected, .like-selected { background-color: transparent; color: #ecf0f1; font-weight: bolder; }
